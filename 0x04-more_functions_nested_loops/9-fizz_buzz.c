@@ -16,23 +16,28 @@ int main(void)
 		if ((m % 3) == 0 && (m % 5) != 0)
 		{
 			printf("Fizz");
+			printf(" ");
 		}
 		/* number divisible by 5 */
 		else if ((m % 5) == 0 && (m % 3) != 0)
 		{
 			printf("Buzz");
+			printf(" ");
 		}
 		else if ((m % 3) == 0 && (m % 5) == 0)
 		{
 			printf("FizzBuzz");
+			printf(" ");
 		}
 		else if (m == 1)
 		{
 			printf("%d", m);
+			printf(" ");
 		}
 		else
 		{
 			printf("%d", m);
+			printf(" ");
 		}
 	}
 	printf("\n");
