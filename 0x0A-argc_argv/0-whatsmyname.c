@@ -12,10 +12,10 @@ int main(int argc, char *argv[])
 {
 	int name;
 
-	printf("Program name: %s\n", argv[0]);
+	printf("%s\n", argv[0]);
 	for (name = 1; name < argc; name++)
 	{
-		printf("Argument %d: %s\n", name, argv[name]);
+		printf("%d: %s\n", name, argv[name]);
 	}
 	return (0);
 }
