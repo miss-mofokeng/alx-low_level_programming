@@ -15,15 +15,14 @@ int **alloc_grid(int width, int height)
 	int x;
 	int y;
 
-	if (width <= 0)
-		return (NULL);
-	if (height <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	dim = malloc(sizeof(int *) * height);
 
 	if (dim == NULL)
 		return (NULL);
+
 	for (x = 0; x < height; x++)
 	{
 		dim[x] = malloc(sizeof(int) * width);
@@ -37,7 +36,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	for (x = 0; x < height; y++)
+	for (x = 0; x < height; x++)
 	{
 		for (y = 0; y < width; y++)
 			dim[x][y] = 0;
