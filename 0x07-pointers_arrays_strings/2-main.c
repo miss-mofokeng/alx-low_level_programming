@@ -8,11 +8,14 @@
  */
 int main(void)
 {
-	char c;
+	char *s = "hello";
+	char *f;
 
-	c = '0';
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
+	f = _strchr(s, 'l');
+
+	if (f != NULL)
+	{
+		printf("%s\n", f);
+	}
 	return (0);
 }

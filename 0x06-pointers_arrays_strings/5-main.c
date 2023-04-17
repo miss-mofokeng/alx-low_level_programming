@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	char c;
+	char str[] = "Look up!\n";
+	char *ptr;
 
-	c = '0';
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
+	ptr = string_toupper(str);
+	printf("%s", ptr);
+	printf("%s", str);
 	return (0);
 }

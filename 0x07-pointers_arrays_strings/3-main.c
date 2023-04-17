@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	char c;
+	char *s = "hello, world";
+	char *f = "oleh";
+	unsigned int n;
 
-	c = '0';
-	printf("%c: %d\n", c, _isdigit(c));
-	c = 'a';
-	printf("%c: %d\n", c, _isdigit(c));
+	n = _strspn(s, f);
+	printf("%u\n", n);
 	return (0);
 }
